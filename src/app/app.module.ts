@@ -1,3 +1,4 @@
+import { AuthGuardService } from './_services/auth-guard.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -23,7 +24,7 @@ import { CurrencyComponent } from './features/currency/currency.component';
     ReactiveFormsModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
