@@ -47,6 +47,7 @@
 
       <div class="form-group">
         <button
+        (click)="login(username, password)"
           type="submit"
           class="btn btn-primary"
           [disabled]="loginForm.pristine || loginForm.invalid"
