@@ -1,1 +1,18 @@
-<p>currency works!</p>
+<app-currency-view
+  currencyPLN="BTC/PLN"
+  currencyUSD="BTC/USD"
+  [store]="currencyStorage.BTC.bid"
+>
+</app-currency-view>
+<app-currency-view
+  currencyPLN="LSK/PLN"
+  currencyUSD="LSK/USD"
+  [store]="currencyStorage.LSK.bid"
+>
+</app-currency-view>
+<app-currency-view
+  currencyPLN="ETH/PLN"
+  currencyUSD="ETH/USD"
+  [store]="currencyStorage.ETH.bid"
+>
+</app-currency-view>

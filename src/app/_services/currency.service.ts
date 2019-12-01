@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class CurrencyService {
 
   url = 'https://bitbay.net/API/Public/';
-  constructor(protected httpClient: HttpClient) { }
+  constructor(public httpClient: HttpClient) { }
 
   public getCurrency(currency: string): Observable<CurrencyModel[]> {
     return this.httpClient.get<CurrencyModel[]>(`${this.url}/${currency}/ticker.json`);
